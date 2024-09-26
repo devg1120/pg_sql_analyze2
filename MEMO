@@ -1,2 +1,10 @@
-https://www.npmjs.com/package/pgsql-parser
-npm install -g pgsql-parser
+
+
+drawdb
+
+  **  local package
+
+   "node-sql-parser": "file:../node-sql-parser-local/node-sql-parser/output/prod"
+
+    "@douyinfe/semi-ui": "./semi-design/packages/semi-ui/"
+
