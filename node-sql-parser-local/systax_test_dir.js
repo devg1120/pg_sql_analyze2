@@ -16,7 +16,7 @@ function print_json(stmts) {
 
 const opt = {
   //database: 'MySQL' // MySQL is the default database
-  database: 'Postgresql'
+  database: 'Postgresql_gs'
 }
 
 function parse( filePath, file ) {

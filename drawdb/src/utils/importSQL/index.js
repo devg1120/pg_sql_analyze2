@@ -8,6 +8,7 @@ import { fromMariaDB } from "./mariadb";
 import { fromMSSQL } from "./mssql";
 import { fromMySQL } from "./mysql";
 import { fromPostgres } from "./postgres";
+import { fromPostgresGs } from "./postgresgs";
 import { fromSQLite } from "./sqlite";
 
 export function importSQL(ast, toDb = DB.MYSQL, diagramDb = DB.GENERIC) {
@@ -21,6 +22,10 @@ export function importSQL(ast, toDb = DB.MYSQL, diagramDb = DB.GENERIC) {
       break;
     case DB.POSTGRES:
       diagram = fromPostgres(ast, diagramDb);
+      break;
+    case DB.POSTGRES_GS:
+      console.log("DB.POSTGRES_GS",diagramDb);
+      diagram = fromPostgresGs(ast, diagramDb);
       break;
     case DB.MARIADB:
       diagram = fromMariaDB(ast, diagramDb);

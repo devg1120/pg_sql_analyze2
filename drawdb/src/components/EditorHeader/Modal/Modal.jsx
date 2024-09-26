@@ -144,6 +144,7 @@ export default function Modal({
     const parser = new Parser();
     let ast = null;
     try {
+
       ast = parser.astify(importSource.src, {
         database: database === DB.GENERIC ? importDb : database,
       });

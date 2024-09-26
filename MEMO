@@ -8,3 +8,15 @@ drawdb
 
     "@douyinfe/semi-ui": "./semi-design/packages/semi-ui/"
 
+
+
+cd node-sql-parser-local/node-sql-parser
+npm run build
+cd ../..
+
+cd drawdb
+yarn
+
+npm run dev
+
+
